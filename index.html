@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Games</title>
+    <!-- Import Rubik Glitch font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        header {
+            background-color: #222;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Title in Rubik Glitch */
+        header h1 {
+            font-family: 'Rubik Glitch', sans-serif;
+            font-size: 28px;
+            color: #4fd1c5;
+        }
+
+        nav a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #4fd1c5;
+        }
+
+        .hero {
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        section {
+            padding: 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h3 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #4fd1c5;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .project {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            flex: 1 1 calc(33% - 30px);
+            min-width: 250px;
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Realm Run heading in Rubik Glitch */
+        .project h4:first-child {
+            font-family: 'Rubik Glitch', sans-serif;
+        }
+
+        .project h4 {
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media(max-width: 900px) {
+            .projects {
+                flex-direction: column;
+            }
+            .project {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electric Games</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Game Development</h2>
+    </div>
+
+    <section id="about">
+        <h3>About Us</h3>
+        <p>Electric Games is an independent game development studio focused on creating fun and creative experiences. Projects are always in development, so stay tuned for future releases!</p>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <h4>Realm Run</h4>
+                <p>Coming soon...</p>
+            </div>
+            <div class="project">
+                <h4>Coming soon...</h4>
+                <p>Coming soon...</p>
+            </div>
+            <div class="project">
+                <h4>Coming soon...</h4>
+                <p>Coming soon...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Electric Games Studio. All rights reserved.
+    </footer>
+</body>
+</html>
